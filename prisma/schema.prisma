@@ -14,3 +14,10 @@ model Character {
   yPosition Int
   createdAt DateTime @default(now())
 }
+
+model Score {
+  id        Int      @id @default(autoincrement())
+  name      String
+  time      Int      // Oyun süresi (milisaniye cinsinden)
+  createdAt DateTime @default(now())
+}
